@@ -1,5 +1,5 @@
 // Action models
-export interface ModuleExampleInferface {
+export interface ModuleExampleInferfaceState {
     message : string,
     example : string,
 }

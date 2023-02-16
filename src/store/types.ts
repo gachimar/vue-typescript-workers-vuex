@@ -1,8 +1,8 @@
-import { ModuleExampleInferface } from "./modules/types"
+import { ModuleExampleInferfaceState } from "./modules/types"
 
 // Action models
 export interface RootState {
-    alertery: ModuleExampleInferface,
+    alertery: ModuleExampleInferfaceState,
     message : string,
 }
 

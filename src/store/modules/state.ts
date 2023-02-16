@@ -1,6 +1,6 @@
-import { ModuleExampleInferface } from "./types"
+import { ModuleExampleInferfaceState } from "./types"
 
-const state : ModuleExampleInferface = {
+const state : ModuleExampleInferfaceState = {
     message: 'ExampleValue',
     example: 'pastLives'
 }

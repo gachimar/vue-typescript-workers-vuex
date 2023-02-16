@@ -1,8 +1,11 @@
-import { Commit, Action, ActionTree } from 'vuex'
+import { Commit, Action, ActionTree, ActionContext } from 'vuex'
 import * as types from './mutation-types'
 import { Message, ModifyMessagePayload, RootState } from './types'
 
-const modifyMessage: Action<RootState, any> = (context: { commit: Commit }, message: Message) => {
+// Aqui va el contexto del Root.
+type RootActionContext = ActionContext<RootState, RootState>
+
+const modifyMessage: Action<RootState, any> = (context: RootActionContext, message: Message) => {
     const payload: ModifyMessagePayload = {
         text: message.text
     }

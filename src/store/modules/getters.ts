@@ -1,17 +1,17 @@
 import { Getter, GetterTree } from "vuex"
 import { RootState } from "../types"
-import { ModuleExampleInferface } from "./types"
+import { ModuleExampleInferfaceState } from "./types"
 
-const getMessageExample : Getter<ModuleExampleInferface, RootState> = (state, getters, rootState) =>{
+const getMessageExample : Getter<ModuleExampleInferfaceState, RootState> = (state, getters, rootState) =>{
     return state.message
 }
 
 
-const example : Getter<ModuleExampleInferface, RootState> = (state, getters, rootState) => (id : number) =>{
+const example : Getter<ModuleExampleInferfaceState, RootState> = (state, getters, rootState) => (id : number) =>{
     return id
 }
 
-const getters : GetterTree<ModuleExampleInferface, RootState> = {
+const getters : GetterTree<ModuleExampleInferfaceState, RootState> = {
     getMessage: getMessageExample,
     example
 }

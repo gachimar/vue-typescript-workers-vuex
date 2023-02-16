@@ -4,13 +4,13 @@ import state from './state'
 import getters from './getters'
 import actions from './actions'
 import mutations from './mutations'
-import { ModuleExampleInferface } from './types'
+import { ModuleExampleInferfaceState } from './types'
 import { InjectionKey } from 'vue'
 import { RootState } from '../types'
 
-export const key: InjectionKey<Store<ModuleExampleInferface>> = Symbol()
+export const key: InjectionKey<Store<ModuleExampleInferfaceState>> = Symbol()
 
-const store: Module<ModuleExampleInferface, RootState> = {
+const store: Module<ModuleExampleInferfaceState, RootState> = {
   namespaced: true,
   state,
   mutations,
